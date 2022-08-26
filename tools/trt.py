@@ -63,7 +63,7 @@ def main():
         model,
         [x],
         fp16_mode=True,
-        log_level=trt.Logger.INFO,
+        log_level=trt.Logger.VERBOSE,
         max_workspace_size=(1 << args.workspace),
         max_batch_size=args.batch,
     )

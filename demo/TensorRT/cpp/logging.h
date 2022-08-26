@@ -201,7 +201,7 @@ private:
 class Logger : public nvinfer1::ILogger
 {
 public:
-    Logger(Severity severity = Severity::kWARNING)
+    Logger(Severity severity = Severity::kVERBOSE)
         : mReportableSeverity(severity)
     {
     }
